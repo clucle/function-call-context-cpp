@@ -1,6 +1,7 @@
 ## 특정 함수에서만 생성 가능한 Context 를 생성한다
 
 Caller 에서 DEFINE_FUNCTION_CALL_CONTEXT 를 사용해서 특정 함수에서만 Context 를 생성 가능
+
 Callee 에서 해당 Context 를 인자값으로 넘겨야 하도록 선언
 
 ### 예시
