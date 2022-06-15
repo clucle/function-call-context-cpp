@@ -6,6 +6,8 @@ Callee 에서 해당 Context 를 인자값으로 넘겨야 하도록 선언
 
 ### 예시
 
+ - `KeyName` 을 매크로에 등록해서 `KeyNameCallContext` 를 생성할 수 있는 함수를 지정한다.
+
  - Caller.h
 ```c++
 class Caller
@@ -14,7 +16,7 @@ public:
 	int CallFunction();
 };
 
-// - Context 생성 - //
+// - Context 생성 가능한 함수 지정 - //
 DEFINE_FUNCTION_CALL_CONTEXT( KeyName, friend int Caller::CallFunction(); )
 ```
 
